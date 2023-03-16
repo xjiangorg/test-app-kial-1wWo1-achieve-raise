@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-ftnu
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:2bc6dbeb1572431f839c5a5d62a59b61
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:d751982963a1c81e6f87c76ee4927b17577dc81e26167c39c54da9c4ede9a388
         name: my-python
         ports:
         - containerPort: 8081
