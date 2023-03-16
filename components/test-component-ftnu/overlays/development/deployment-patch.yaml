@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ftnu
+  namespace: build-e2e-lmzj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:d751982963a1c81e6f87c76ee4927b17577dc81e26167c39c54da9c4ede9a388
+        name: my-python
+        resources: {}
+status: {}
